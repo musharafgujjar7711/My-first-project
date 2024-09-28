@@ -26,15 +26,17 @@ function App() {
 
   return (
     <div className='h-100vh bg-blue-500 m-auto w-full text-white'>
-      <Topbutton setQuery={setQuery} />
+      <Topbutton c setQuery={setQuery} />
       <Search setQuery={setQuery} />
       {weather && (
         <>
           
            
           <DateAndTIme weather={weather} />
-          <HourAndDay title="3 hour step forecast" data={weather.hourlyForecast} /> {/* Pass hourly forecast data */}
-          <HourAndDay title="Daily step forecast" data={weather.dailyForecast} /> {/* Pass daily forecast data */}
+          <HourAndDay title="3 hour step forecast" data={weather.hourlyForecast} /> 
+          <div className=''>
+          <HourAndDay c title="Daily step forecast" data={weather.dailyForecast}  />
+          </div>
         </>
       )} 
     </div>

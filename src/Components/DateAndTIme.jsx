@@ -8,7 +8,7 @@ function DateAndTime({ weather: { name, formattedLocaltime, country, details, ic
   
   return (
     <div className='pt-4 flex justify-center items-center flex-col'>
-      <div className='font-bold text-black text-lg'>
+      <div className='font-bold text-black text-lg flex-wrap flex p-2'>
         {formattedLocaltime}
       </div> 
       <div className='pt-8 font-bold text-lg'>

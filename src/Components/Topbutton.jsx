@@ -20,7 +20,7 @@ function Topbutton({setQuery}) {
     },
   ]
   return (
-    <div className='text-white p-4 flex justify-center gap-24 items-center font-bold'>
+    <div className='text-white p-4 flex justify-center gap-4 md:gap-20 items-center font-bold w-full'>
       {TopCity.map((city)=>{
        return <button key={city.id} className=' hover:bg-slate-500 p-2 rounded' onClick={()=>setQuery({q: city.name})}>{city.name}</button>
       })}

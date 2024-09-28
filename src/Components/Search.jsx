@@ -23,11 +23,11 @@ function Search({ setQuery }) {
 
   return (
     <div className='p-4 mt-6 flex items-center justify-center gap-20'>
-      <div className='flex items-center gap-6'>
+      <div className='flex items-center gap-6 justify-center'>
         <input 
           type="text" 
           placeholder='Search here by city name' 
-          className='text-black w-80 p-3 rounded outline-none'
+          className='text-black w-auto p-3 rounded outline-none'
           value={city} 
           onChange={(e) => setCity(e.currentTarget.value)} 
         />
@@ -38,9 +38,7 @@ function Search({ setQuery }) {
           <BiLocationPlus size={30} onClick={getCurrentLocation} />
         </span>
       </div>
-      <div>
-        C | F
-      </div>
+     
     </div>
   )
 }
